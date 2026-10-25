@@ -158,3 +158,17 @@ cython_debug/
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
+
+# Large datasets and archives (prevents GitHub upload rejection)
+dataset/external/
+dataset/internal/
+*.zip
+*.tar
+*.tar.gz
+
+# Generated checkpoints and test logs
+training/checkpoints/
+results/*.npy
+project_tree.json
+diagnostic_results.txt
+
